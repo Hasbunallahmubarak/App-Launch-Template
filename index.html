@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Apartment Rental</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This template is one of the works of Hmabiola. Template Design was sourced from W3shools (link in footer). All stages of developement and languages used (HTML,CSS,JavaScript) all emanate from Hmabiola.">
+	<meta name="keywords" content="Hmabiola works, Hmabiola, Hasbunallah Mubarak Abiola works"/>
+	<meta name="viewport" content="width = device-width,initial-scale = 1.0">
+	<meta http-equiv="refresh" content="30">
+	<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="rental.css">
+	<link rel="stylesheet" type="text/css" href="apartment.css">
+</head>
+<body>
+	<section>
+		<nav>
+			<h2>Rental</h2>
+			<span onclick="openS()">&#9776;</span>
+		</nav>
+		<div id="overlay" onclick="closeS()" title="Close Menu"></div>
+		<div class="container">
+			<div class="side-nav">
+				<article id="side_nav">
+					<div>
+						<h2>Rental</h2>
+						<h2>from $99</h2>
+						<p>per night</p>
+						<form action="#" method="GET" autocomplete="on">
+							<label><i class="fa fa-calendar-check-o"></i>&nbsp; Check in</label>
+							<input type="text" name="Check" placeholder="DD MM YYYY" required="required"/>
+							<label><i class="fa fa-calendar-o"></i>&nbsp;Check Out</label>
+							<input type="text" name="Check" placeholder="DD MM YYYY" required="required"/>
+							<label><i class="fa fa-male"></i>&nbsp;Adults</label>
+							<input type="number" name="age" value="1" max="10" min="0" required="required"/>
+							<label><i class="fa fa-child"></i>&nbsp;Kids</label>
+							<input type="number" name="age" value="0" max="10" min="0" required="required"/>
+							<input type="submit" value="Search availability" />
+						</form>
+					</div>
+					<a href="#"><i class="fa fa-building"></i>&nbsp; Apartment</a>
+					<a onclick="openM()"><i class="fa fa-rss"></i>&nbsp; Subscribe</a>
+					<a href="#contact"><i class="fa fa-envelope"></i>&nbsp; Contact</a>
+				</article>
+				
+			</div>
+			<div class="main">
+				<h1>The Apartment</h1>
+				<div>
+					<div class="image">
+						<img src="images/livingroom.jpg" id="image">
+						<h4 id="text">Living Room</h4>
+					</div>
+					<div class="room">
+						<img src="images/livingroom.jpg" title="Living room" alt="Living Room" onclick="onClick(this)"/>
+						<img src="images/diningroom.jpg" title="Dinning room" alt="Dinning Room" onclick="onClick(this)"/>
+						<img src="images/bedroom.jpg" title="Bedroom" alt="Bedroom" onclick="onClick(this)"/>
+						<img src="images/livingroom2.jpg" title="Second Living room" alt="Living Room ||" onclick="onClick(this)"/>
+					</div>
+					<div class="other">
+						<h2>The space</h2>
+						<div class="space">
+							<div>
+								<h3><i class="fa fa-male"></i>&nbsp; Max people: 4</h3>
+								<h3><i class="fa fa-bath"></i>&nbsp; Bathrooms: 2</h3>
+								<h3><i class="fa fa-bed"></i>&nbsp; Bedrooms:  1</h3>
+							</div>
+							<div>
+								<h3><i class="fa fa-fw fa-clock-o"></i>&nbsp; Check In: After 3PM</h3>
+								<h3><i class="fa fa-fw fa-clock-o"></i>&nbsp; Check Out: 12PM</h3>
+							</div>
+						</div>
+						<hr>
+						<h2>Amenities</h2>
+						<div class="amenities">
+							<div>
+								<h3><i class="fa fa-fw fa-shower"></i>&nbsp; Shower</h3>
+								<h3><i class="fa fa-fw fa-wifi"></i>&nbsp; WiFi</h3>
+								<h3><i class="fa fa-fw fa-tv"></i>&nbsp; TV</h3>
+							</div>
+							<div>
+								<h3><i class="fa fa-fw fa-cutlery"></i>&nbsp; Kitchen</h3>
+								<h3><i class="fa fa-fw fa-thermometer"></i>&nbsp; Heating</h3>
+								<h3><i class="fa fa-fw fa-wheelchair"></i>&nbsp; Accessible</h3>
+							</div>
+						</div>
+						<h2>Extra Info</h2>
+						<p>Our apartment is really clean and we like to keep it that way. Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>We accept:</p>
+						<div>
+							<i class="fa fa-credit-card"></i>
+							<i class="fa fa-mastercard"></i>
+							<i class="fa fa-cc-visa"></i>
+							<i class="fa fa-cc-amex"></i>
+							<i class="fa fa-cc-paypal"></i>
+						</div>
+						<hr>
+						<h2>Rules</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<p>Subscribe to receive updates on available dates and special offers.</p>
+						<a class="sus" onclick="openM()">Subscribe</a>
+						<hr>
+						<div id="contact">
+							<h1>Contact</h1>
+							<p><i class="fa fa-map-marker"></i>&nbsp; Lacoste, Lagos</p>
+							<p><i class="fa fa-phone"></i>&nbsp; Phone: +2348127892388</p>
+							<p><i class="fa fa-envelope"></i>&nbsp; Email: <a href="mailto:hasbunallahmubarak@gmail.com" class="same">mail@mail.com</a></p>
+							<p class="go">Questions? Go ahead, ask them:</p>
+							<form action="#" action="GET" autocomplete="on">
+								<input type="text" name="name" placeholder="Name" required="required"/>
+								<input type="email" name="email" placeholder="Email" required="required"/>
+								<input type="text" name="message" placeholder="Message" required="required"/>
+								<input type="submit" value="Send a Message"/>
+							</form>
+						</div>
+					</div>
+					<div>Developed by Hmabiola | Template from <a href="https://www.w3schools.com/w3css/tryw3css_templates_apartment_rental.html" target="_blank" class="same">W3schools</a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="modal">
+		<div class="modal-content">
+			<span onclick="closeM()">&times;</span>
+			<h1>SUBSCRIBE</h1>
+			<p>Join our mailing list to receive updates on available dates and special offers.</p>
+			<form>
+				<input type="email" name="email" placeholder="Enter e-mail">
+				<input type="submit" value="Subscribe" onclick="closeM()"/>
+			</form>
+		</div>
+	</div>
+	<script>
+		var modal = document.getElementById('modal');
+		var sideNav = document.getElementById('side_nav');
+		var overlay = document.getElementById('overlay');
+		function openM() {
+			modal.style.display = "block";
+		}
+		function closeM() {
+			modal.style.display = "none";
+		}
+		function onClick(element) {
+			document.getElementById('image').src = element.src;
+			document.getElementById('text').innerHTML = element.alt;
+		}
+		function openS() {
+			sideNav.style.display = "block";
+			overlay.style.display = "block";
+		}
+		function closeS() {
+			sideNav.style.display = "none";
+			overlay.style.display = "none";
+		}
+	</script>
+</body>
+</html>
